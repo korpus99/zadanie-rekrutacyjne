@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --black-color: #111;
+    --white-color: #fff;
+    --beige-color: #DCC1AB;
+    --grey-color: #F5F0EC;
+    --green-color: #1B5B31;
+    --gradient-color: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+}
+
+/* Header */
+.nav-link {
+    color: var(--black-color);
+}
+
+.nav-link:hover {
+    color: var(--green-color);
+}
+
+@media (min-width: 1200px) {
+    .dropdown .dropdown-menu {
+        display: none;
+        animation: .5s slideup;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+    
+    @keyframes slideup {
+        from {
+            transform: translateY(10%);
+        }
+        to {
+            transform: translateY(0%);
+        }
+    }
+}
+
+/* Intro */
+#intro {
+    background-color: var(--beige-color);
+}
+
+.carousel-controls {
+    background-color: var(--grey-color);
+    width: 150px;
+    height: 100px;
+}
+
+.btn.btn-outline-success:hover svg path {
+    fill: var(--white-color);
+}
+
+/* Offer */
+#offer {
+    background-color: var(--grey-color);
+}
+
+.offer-shadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+    transition: all 0.1s ease;
+    border: 1px solid var(--white-color);
+}
+
+.card:hover {
+    transition: all 0.1s ease;
+    border: 1px solid var(--green-color);
+}
+
+.card-body a {
+    border-radius: 0;
+    border-bottom: 1px solid var(--green-color);
+}
+
+/* About */
+#about {
+    background-color: var(--green-color);
+}
+
+/* Realizations */
+#realizations {
+    background-color: var(--beige-color);
+}
+
+.expand {
+    background: var(--gradient-color);
+    transition: max-height 0.5s ease;
+}
+
+.gallery .image {
+    overflow: hidden;
+}
+
+.gallery .image img {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.gallery .image:hover img {
+    transform: scale(1.1);
+}
+
+/* Contact */
+#contact {
+    background-color: var(--grey-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--black-color);
+    color: var(--grey-color);
+}
+
+/* Others */
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.color-green {
+    color: var(--green-color);
+}
+
+.bg-green {
+    background-color: var(--green-color);
+}
+
+.color-grey {
+    color: var(--grey-color);
+}
+
+.btn {
+    border-radius: 200px;
+}
+
+.btn-success {
+    background-color: var(--green-color);
+    border-color: var(--green-color);
+}
+
+.btn-outline-success {
+    border-color: var(--green-color);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--green-color);
+}
+
+a {
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid;
+    border-radius: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.inputIn {
+    animation: opacityAnim 2s ease;
+}
+
+.inputOut {
+    animation: opacityAnim 1s ease reverse;
+}
+
+@keyframes opacityAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
